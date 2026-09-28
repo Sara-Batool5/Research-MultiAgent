@@ -1,3 +1,6 @@
+import crewai.llms.cache as _crewai_cache
+
+_crewai_cache.mark_cache_breakpoint = lambda msg: msg
 from crewai import Crew, Task, Process
 from llm import get_llm
 from planner import create_planner
